@@ -4,6 +4,7 @@ resources:
   - repository: Carpenter
     type: github
     name: suent/carpenter-azure-pipelines
+    endpoint: suent
 
 stages:
 - template: template/carpenter-default.yml@Carpenter
