@@ -1,0 +1,11 @@
+
+resources:
+  repositories:
+  - repository: Carpenter
+    type: github
+    name: suent/carpenter-azure-pipelines
+
+stages:
+- template: template/carpenter-default.yml@Carpenter
+  parameters:
+    pipelineVersion: 1
