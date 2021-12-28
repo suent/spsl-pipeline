@@ -1,0 +1,5 @@
+
+stages:
+- template: template/carpenter-default.yml@Carpenter
+  parameters:
+    pipelineVersion: 1

@@ -7,6 +7,4 @@ resources:
     endpoint: suent
 
 stages:
-- template: template/carpenter-default.yml@Carpenter
-  parameters:
-    pipelineVersion: 1
+- template: template/pipeline.yml
