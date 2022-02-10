@@ -66,3 +66,4 @@ stages:
   parameters:
     # The build type if a build is manually run. This value gets overridden by automated builds.
     buildType: ${{ parameters.buildType }}
+    prereleaseLabel: ${{ parameters.prereleaseLabel }}
