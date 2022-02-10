@@ -23,4 +23,5 @@ stages:
   parameters:
     pipelineVersion: 1
     buildType: ${{ parameters.buildType }}
+    versionType: SemVer
     prereleaseLabel: ${{ parameters.prereleaseLabel }}
