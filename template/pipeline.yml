@@ -1,5 +1,26 @@
+parameters:
+  
+  # The build type if a build is manually run. This value gets overridden by automated builds.
+- name: buildType
+  type: string
+  default: CI
+  values:
+  - CI
+  - Prerelease
+  - Release
+
+  # The prerelease label. This value is only used if buildType is Prerelease.
+- name: prereleaseLabel
+  type: string
+  default: alpha
+  values:
+  - alpha
+  - beta
+  - RC
 
 stages:
 - template: template/carpenter-default.yml@Carpenter
   parameters:
     pipelineVersion: 1
+    buildType: ${{ parameters.buildType }}
+    prereleaseLabel: ${{ parameters.prereleaseLabel }}
